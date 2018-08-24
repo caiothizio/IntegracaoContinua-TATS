@@ -11,6 +11,10 @@ package br.edu.utfpr.atividade06;
  */
 public class Mediana {
     public double getMediana(double[] vet){
-        return 3;
+        if(vet.length % 2 == 0){
+            return (vet[vet.length/2] + vet[(vet.length/2)-1])/2;
+        }else{
+            return vet[vet.length/2];
+        }
     }
 }

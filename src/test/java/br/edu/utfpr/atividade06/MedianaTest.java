@@ -23,4 +23,10 @@ public class MedianaTest {
         double[] vet = {1, 2, 3, 4, 5};
         assertEquals(3f, new Mediana().getMediana(vet), 0.01);
     }
+    
+    @Test
+    public void testeMedianaVetorOrdenadoPar(){
+        double[] vet = {1, 2, 3, 4, 5, 6};
+        assertEquals(3.5f, new Mediana().getMediana(vet), 0.01);
+    }
 }
