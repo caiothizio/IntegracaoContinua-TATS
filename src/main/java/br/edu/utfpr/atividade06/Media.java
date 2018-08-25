@@ -12,23 +12,57 @@ package br.edu.utfpr.atividade06;
 class Media {
 
     double media(double[] vet) {
-        return 3.0;
+        double soma = 0;
+        
+        for(double d : vet){
+            soma += d;
+        }
+        
+        return soma/vet.length;
     }
 
     double menor(double[] vet) {
-        return 1.0;
+        double menor = Double.MAX_VALUE;
+        
+        for(double d : vet){
+            if(d < menor)
+                menor = d;
+        }
+        
+        return menor;
     }
 
     double maior(double[] vet) {
-        return 5.0;
+        double maior = Double.MIN_VALUE;
+        
+        for(double d : vet){
+            if(d > maior)
+                maior = d;
+        }
+        
+        return maior;
     }
 
-    Object qtdMaiores(double[] vet) {
-        return 2;
+    int qtdMaiores(double[] vet) {
+        int qtdMaiores = 0;
+        
+        for(double d : vet){
+            if(d > media(vet))
+                qtdMaiores++;
+        }
+        
+        return qtdMaiores;
     }
 
     Object qtdMenores(double[] vet) {
-        return 2;
+        int qtdMenores = 0;
+        
+        for(double d : vet){
+            if(d < media(vet))
+                qtdMenores++;
+        }
+        
+        return qtdMenores;
     }
     
 }
