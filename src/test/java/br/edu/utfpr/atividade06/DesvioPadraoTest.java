@@ -22,6 +22,6 @@ public class DesvioPadraoTest {
         DesvioPadrao dp = new DesvioPadrao();
         double vet[] = {1, 2, 3, 4, 5};
         
-        assertEquals(1,414214f, dp.calcularDesvioPadrao(vet), 0.01);
+        assertEquals(1.414214f, dp.calcularDesvioPadrao(vet), 0.01);
     }
 }
